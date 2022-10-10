@@ -1,5 +1,4 @@
 function camelize(str) {
-  // ваш код...
   let arr = str.split('-');
 
   let result = arr.map((element, index) => {
