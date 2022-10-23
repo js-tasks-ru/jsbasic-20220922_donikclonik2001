@@ -14,7 +14,7 @@ function highlight(table) {
     infoObj[cell.textContent] = index;
     return infoObj;
   }, {});
-  
+
 
   const rows = Array.from(table.querySelector('tbody').rows);
   rows.forEach((row) => {
@@ -42,6 +42,7 @@ function highlight(table) {
 
         case teacherInfo["Age"]: {
           if (+cell.textContent < 18) row.style.textDecoration = "line-through";
+          break;
         }
       }
     })
