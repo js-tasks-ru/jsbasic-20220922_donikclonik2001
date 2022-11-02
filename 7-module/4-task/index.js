@@ -17,11 +17,12 @@ export default class StepSlider {
     this.sliderProgress = this.elem.querySelector('.slider__progress');
 
     this.sliderSteps = this.elem.querySelector('.slider__steps');
-    this.stepsCollection = this.sliderSteps.querySelectorAll('span');
+
     for (let i = 0; i < steps; i++) {
       this.sliderSteps.append(document.createElement('span'));
     }
 
+    this.stepsCollection = this.sliderSteps.querySelectorAll('span');
     this.setValue(value);
     this.changePos(value);
 
